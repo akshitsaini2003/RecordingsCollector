@@ -25,7 +25,7 @@ const requiredEnvVars = [
 // app.use(cors());
 
 app.use(cors({
-  origin: "https://spiffy-hotteok-cdafc1.netlify.app/"
+  origin: "http://localhost:5173/"
 }));
 
 app.use(express.json());
