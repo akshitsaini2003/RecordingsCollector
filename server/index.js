@@ -22,7 +22,12 @@ const requiredEnvVars = [
   "ADMIN_PASSWORD"
 ];
 
-app.use(cors());
+// app.use(cors());
+
+app.use(cors({
+  origin: "https://your-netlify-site.netlify.app"
+}));
+
 app.use(express.json());
 
 app.get("/api/health", (req, res) => {
